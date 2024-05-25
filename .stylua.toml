@@ -1,0 +1,3 @@
+# this file is for set formmating configuration, if we modified, when we save a file again, it will be formmated
+indent_type = "Spaces"
+indent_width = 2

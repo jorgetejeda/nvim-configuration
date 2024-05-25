@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("jtejeda.plugins", {
+require("lazy").setup({ { import = "jtejeda.plugins" }, { import = "jtejeda.plugins.lsp" } }, {
   checker = {
     enabled = true, -- check if plugins need update
     notify = false, -- don't notify with message
