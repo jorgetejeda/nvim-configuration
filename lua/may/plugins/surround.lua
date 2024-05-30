@@ -1,3 +1,7 @@
+--     ys = you surround
+--     cs = change surround
+--     ds = delete surround
+--     -----------
 --     Old text                    Command         New text
 -- --------------------------------------------------------------------------------
 --     surr*ound_words             ysiw)           (surround_words)

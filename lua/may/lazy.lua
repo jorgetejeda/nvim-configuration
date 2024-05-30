@@ -12,4 +12,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("may.plugins")
+require("lazy").setup({ { import = "may.plugins" }, { import = "may.plugins.lsp" } },
+{
+   checker = {
+     enable = true, -- check if plugins need update
+     notify = false, -- don't notify with message
+   },
+  change_detection = {
+    notify = false, -- disabled, don't show greeter message everytime we save a new plugin 
+  }
+ }
+)

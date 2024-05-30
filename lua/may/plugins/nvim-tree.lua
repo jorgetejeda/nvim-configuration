@@ -1,3 +1,4 @@
+-- https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = "nvim-tree/nvim-web-devicons",
@@ -21,8 +22,8 @@ return {
         icons = {
           glyphs = {
             folder = {
-              arrow_closed = "⌃", -- arrow when folder is closed
-              arrow_open = "⌵", -- arrow when folder is open
+              arrow_closed = "", -- arrow when folder is closed
+              arrow_open = "", -- arrow when folder is open
             },
           },
         },

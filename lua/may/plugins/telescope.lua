@@ -1,3 +1,5 @@
+-- You have to install ripgrep to use the live_grep feature
+-- brew install ripgrep
 -- Description: Telescope plugin to find files, grep, and search for todos
 return {
   "nvim-telescope/telescope.nvim",
