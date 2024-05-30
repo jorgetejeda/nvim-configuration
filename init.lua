@@ -1,6 +1,5 @@
--- FIX: Packages need fix
---require("jtejeda.core")
---require("jtejeda.lazy")
+-- require("jtejeda.core")
+-- require("jtejeda.lazy")
 
 -- May configuration
 require("may.core")
