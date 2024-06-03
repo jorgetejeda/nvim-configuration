@@ -1,0 +1,3 @@
+-- brew install lazygit
+-- brew install ripgrep
+-- brew install jesseduffield/lazygit/lazygit
