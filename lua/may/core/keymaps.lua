@@ -20,3 +20,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 keymap.set("n", "<CR>", "o<Esc>k", { desc = "Insert a newline pressing <ENTER> without entering insert mode" })
 keymap.set("n", "<S-CR>", "O<Esc>j", { desc = "Insert a newline pressing <SHIFT+ENTER> without entering insert mode" })
+
+-- terminal management
+keymap.set("t", "<leader><ESC>", "<C-\\><C-n>", { desc = "Close terminal mode" })
