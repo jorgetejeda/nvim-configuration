@@ -1,3 +1,19 @@
+format = """
+$battery\
+$username\
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$time\
+"""
+
+# right_format = """
+# $git_branch\
+# $git_status\
+# $nodejs\
+# """
+
 [character]
 success_symbol = "❯"
 error_symbol = "✖"
@@ -9,6 +25,9 @@ discharging_symbol = '💀 '
 
 [os.symbols]
 Macos = '󰀵'
+
+[username]
+show_always = true
 
 # Shows the hostname
 [hostname]
@@ -225,9 +244,6 @@ format = '\[[$symbol$workspace]($style)\]'
 
 [time]
 format = '\[[$time]($style)\]'
-
-[username]
-format = '\[[$user]($style)\]'
 
 [vagrant]
 format = '\[[$symbol($version)]($style)\]'

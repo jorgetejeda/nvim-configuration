@@ -28,29 +28,29 @@ local config = {
 	color_scheme = "tokyonight_night",
 
 	-- background config (use a color instead of a gradient)
-	background = {
-		{
-			source = {
-				File = {
-					path = "/assets/blob.gif",
-					speed = 0.2,
-				},
-			},
-			repeat_x = "NoRepeat",
-			repeat_y = "NoRepeat",
-			vertical_align = "Middle",
-			horizontal_align = "Center",
-			width = "100%",
-			height = "Cover",
-			opacity = 0.10,
-			hsb = {
-				hue = 0.9,
-				saturation = 0.8,
-				brightness = 0.1,
-			},
-		},
-	},
-
+	-- background = {
+	-- 	{
+	-- 		source = {
+	-- 			File = {
+	-- 				path = "/assets/blob.gif",
+	-- 				speed = 0.2,
+	-- 			},
+	-- 		},
+	-- 		repeat_x = "NoRepeat",
+	-- 		repeat_y = "NoRepeat",
+	-- 		vertical_align = "Middle",
+	-- 		horizontal_align = "Center",
+	-- 		width = "100%",
+	-- 		height = "Cover",
+	-- 		opacity = 0.10,
+	-- 		hsb = {
+	-- 			hue = 0.9,
+	-- 			saturation = 0.8,
+	-- 			brightness = 0.1,
+	-- 		},
+	-- 	},
+	-- },
+	--
 	window_background_opacity = 0.85,
 	window_background_image_hsb = {
 		brightness = 0.8,

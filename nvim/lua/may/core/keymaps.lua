@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for concisenses
+--set foldmehtod = indent
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
@@ -26,3 +27,13 @@ keymap.set("t", "<leader><ESC>", "<C-\\><C-n>", { desc = "Close terminal mode" }
 
 -- jump into previous file :e#
 keymap.set("n", "<leader>`", "<leader><CR>`", { desc = "Toggle between current file and previous file" })
+
+-- Fold code
+-- set command
+-- :set foldmehtod=indent
+keymap.set("n", "za", "za", { desc = "Toggle between closing and opening the fold under the cursos" })
+-- zc - Close (fold) the current fold under the cursor.
+-- zo - Open (unfold) the current fold under the cursor.
+-- za - Toggle between closing and opening the fold under the cursor.
+-- zR - Open all folds in the current buffer.
+-- zM - Close all folds in the current buffer.
