@@ -2,27 +2,32 @@ local wezterm = require("wezterm")
 
 local config = {
 	macos_window_background_blur = 30,
-	enable_tab_bar = false,
+	enable_tab_bar = true,
 	window_decorations = "RESIZE",
 	window_close_confirmation = "NeverPrompt",
 	native_macos_fullscreen_mode = true,
 	default_cursor_style = "BlinkingUnderline",
+	use_fancy_tab_bar = false,
+	hide_tab_bar_if_only_one_tab = true,
 	window_padding = {
-		left = 12,
-		right = 12,
-		top = 12,
-		bottom = 12,
+		left = 60,
+		right = 28,
+		top = 28,
+		bottom = 28,
 	},
 
 	-- font config
 	font = wezterm.font("FiraCode Nerd Font Mono"),
-	font_size = 14,
+	font_size = 16,
 	line_height = 1.1,
 	adjust_window_size_when_changing_font_size = false,
 
 	-- keys config
 	send_composed_key_when_left_alt_is_pressed = true,
 	send_composed_key_when_right_alt_is_pressed = false,
+	keys = {
+		{ key = "t", mods = "CMD|SHIFT", action = wezterm.action.ShowTabNavigator },
+	},
 
 	-- color scheme
 	color_scheme = "tokyonight_night",
