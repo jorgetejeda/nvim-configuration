@@ -2,5 +2,9 @@
 -- require("jtejeda.lazy")
 
 -- May configuration
-require("may.core")
-require("may.lazy")
+if vim.g.vscode then
+  print("Vscode is working")
+else
+  require("may.core")
+  require("may.lazy")
+end

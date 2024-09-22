@@ -17,3 +17,7 @@ yarn
 
 -- cask
 wezterm
+
+
+after installing nvm we need to create a .nvim directory
+after install openssh we need to create a .ssh directory

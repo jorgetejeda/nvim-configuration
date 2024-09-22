@@ -11,11 +11,11 @@ discharging_symbol = '💀 '
 Macos = '󰀵'
 
 # Shows the hostname
-[hostname]
-ssh_only = false
-format = 'on [$hostname](bold yellow) '
-disabled = false
-ssh_symbol = " "# Shows current directory
+# [hostname]
+# ssh_only = false
+# format = 'on [$hostname](bold yellow) '
+# disabled = false
+# ssh_symbol = " "# Shows current directory
 
 [directory]
 truncation_length = 3
@@ -23,7 +23,7 @@ fish_style_pwd_dir_length=2
 home_symbol = '󰋜 ~'
 read_only_style = '197'
 read_only = '  '
-format = 'at [$path]($style)[$read_only]($read_only_style) '
+format = '[$path]($style)[$read_only]($read_only_style) '
 
 # Shows current git branch
 [git_branch]
