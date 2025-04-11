@@ -34,3 +34,14 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- ignore directoies
 opt.wildignore:append({ "*/node_modules/*" })
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+  callback = function()
+    if vim.bo.buftype == "" then
+      vim.opt_local.foldmethod = "indent"
+      vim.opt_local.foldlevel = 99      -- 👈 Deja todo desplegado
+      vim.opt_local.foldlevelstart = 99 -- 👈 Asegura que inicie desplegado
+      vim.opt_local.foldenable = true   -- 👈 Habilita el sistema de folds, pero sin colapsar
+    end
+  end
+})

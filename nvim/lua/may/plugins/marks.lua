@@ -4,12 +4,12 @@ return {
   opts = {
     disable_mappings = false,
     mappings = {
-      toggle = "<leader>m",
-      set_next = "<leader>m",
-      next = "m,",
-      prev = "m.",
-      preview = "m;",
-      delete_buf = "m-",
+      toggle = "<leader>nt",
+      set_next = "<leader>na",
+      next = "nn",
+      prev = "np",
+      preview = "nv",
+      delete_buf = "nd",
     },
   },
 }
